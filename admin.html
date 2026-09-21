@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - HealthDesk</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        🩺 HealthDesk
+    </div>
+
+    <div>
+        <span class="clinic-name">Clinic Administrator</span>
+        <button id="adminLogoutBtn">Log Out</button>
+    </div>
+
+</header>
+
+
+<main class="dashboard">
+
+    <section class="welcome-section">
+
+        <h1>Clinic Dashboard 🏥</h1>
+
+        <p>
+            Manage student clinic appointments.
+        </p>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+
+    <section class="stats-container">
+
+        <div class="stat-card">
+
+            <div class="stat-icon">📅</div>
+
+            <div>
+                <h3>Total</h3>
+
+                <strong id="adminTotal">
+                    0
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">⏳</div>
+
+            <div>
+                <h3>Pending</h3>
+
+                <strong id="adminPending">
+                    0
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">✅</div>
+
+            <div>
+                <h3>Approved</h3>
+
+                <strong id="adminApproved">
+                    0
+                </strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- APPOINTMENTS -->
+
+    <section class="next-appointment">
+
+        <div class="section-title">
+
+            <h2>Student Appointments</h2>
+
+        </div>
+
+
+        <div id="adminAppointments">
+
+            <div class="empty-dashboard">
+
+                <span>📋</span>
+
+                <p>
+                    No appointments yet.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login - HealthDesk</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            🩺 HealthDesk
+        </div>
+
+        <span class="clinic-name">
+            School Clinic
+        </span>
+
+    </header>
+
+
+    <main class="auth-container">
+
+        <div class="auth-card">
+
+            <div class="medical-icon">
+                🩺
+            </div>
+
+            <h1>HealthDesk</h1>
+
+            <p class="auth-subtitle">
+                School Clinic Appointment System
+            </p>
+
+
+            <!-- LOGIN -->
+
+            <div id="loginSection">
+
+                <h2>Welcome Back</h2>
+
+                <p class="form-description">
+                    Login to manage your clinic appointments.
+                </p>
+
+
+                <form id="loginForm">
+
+                    <label for="loginEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="btn primary-btn full-width">
+
+                        Login
+
+                    </button>
+
+                </form>
+
+
+                <p class="switch-text">
+
+                    Don't have an account?
+
+                    <button
+                        type="button"
+                        id="showSignup">
+
+                        Sign Up
+
+                    </button>
+
+                </p>
+
+            </div>
+
+
+            <!-- SIGN UP -->
+
+            <div id="signupSection" class="hidden">
+
+                <h2>Create Account</h2>
+
+                <p class="form-description">
+                    Create your HealthDesk student account.
+                </p>
+
+
+                <form id="signupForm">
+
+
+                    <label for="signupName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="signupName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+
+                    <label for="signupStudentId">
+                        Student ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="signupStudentId"
+                        placeholder="Enter your student ID"
+                        required
+                    >
+
+
+                    <label for="signupEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+
+                    <label for="signupPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="Create a password"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="btn primary-btn full-width">
+
+                        Create Account
+
+                    </button>
+
+                </form>
+
+
+                <p class="switch-text">
+
+                    Already have an account?
+
+                    <button
+                        type="button"
+                        id="showLogin">
+
+                        Login
+
+                    </button>
+                    <p class="switch-text">
+    Clinic Administrator?
+    <a href="admin.html">Admin Dashboard</a>
+</p>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            HealthDesk © 2026 | School Clinic
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
